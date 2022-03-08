@@ -1,0 +1,9 @@
+<article class="listing">
+  <img src={{blog.image}} alt="">
+  <h3>{{#link-to "blogs.show" blog class=blog.id}}{{blog.title}}{{/link-to}}</h3>
+  <p>{{blog.description}}</p>
+  <div class="detail owner">
+    <span>author:</span> {{blog.author}}
+  </div>
+</article>
+{{outlet}}

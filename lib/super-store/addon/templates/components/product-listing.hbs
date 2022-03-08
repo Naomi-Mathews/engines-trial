@@ -1,0 +1,8 @@
+<article class="listing">
+  <img src={{product.image}} alt="">
+  <h3>{{#link-to "products.show" product class=product.id}}{{product.title}}{{/link-to}}</h3>
+  <div class="detail owner">
+    <span>cost:</span> {{product.cost}}
+  </div>
+</article>
+{{outlet}}
