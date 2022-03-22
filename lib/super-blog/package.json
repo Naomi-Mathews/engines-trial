@@ -6,6 +6,13 @@
   ],
   "dependencies": {
     "ember-cli-htmlbars": "*",
-    "ember-cli-babel": "*"
+    "ember-cli-babel": "*",
+    "ember-cli-sass": "10.0.0",
+    "node-sass": "^4.14.1"
+  },
+  "ember-addon": {
+    "paths": [
+      "../shared"
+    ]
   }
 }

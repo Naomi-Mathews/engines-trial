@@ -4,3 +4,9 @@
     <li>{{blog-listing blog=blogArticle}}</li>
   {{/each}}
 </ul>
+
+<h2>Also check out our store</h2>
+{{#link-to-external "super-store"}}Our super store{{/link-to-external}}
+
+<h3>Or check out bestselling product</h3>
+<button {{action "bestsellingProduct"}}>See bestselling</button>

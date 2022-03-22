@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+body {
+  border: 10px solid $test-color;
+}
+
+article {
+  background: grey;
+}

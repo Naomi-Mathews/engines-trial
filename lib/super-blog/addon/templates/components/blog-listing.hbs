@@ -1,9 +1,15 @@
-<article class="listing">
+<article class="listing blog-list">
   <img src={{blog.image}} alt="">
   <h3>{{#link-to "blogs.show" blog class=blog.id}}{{blog.title}}{{/link-to}}</h3>
   <p>{{blog.description}}</p>
   <div class="detail owner">
     <span>author:</span> {{blog.author}}
   </div>
+  <button {{action "latestBlog"}}>Checkout our latest blog</button>
+  {{#link-to-external "super-store"}}
+    Check out bestselling product (using link to external)
+  {{/link-to-external}}
+  <button {{action "bestsellingProduct"}}>Checkout our bestselling product ( uses parent router service )</button>
+  {{#link-to-all label="Checkout our bestselling product (uses addon component)" path="super-store.products" }}{{/link-to-all}}
 </article>
 {{outlet}}

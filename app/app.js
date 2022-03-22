@@ -10,8 +10,11 @@ const App = Application.extend({
       dependencies: {
         services: [
           'store',
-          { parentRouter: 'router'}
-        ]
+          { parentRouter: 'router'},
+        ],
+        externalRoutes: {
+          'super-store': 'super-store.products',
+        }
       }
     },
     'super-store': {

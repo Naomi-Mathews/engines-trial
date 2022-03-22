@@ -1,0 +1,11 @@
+{
+  "name": "shared",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "ember-cli-babel": "*",
+    "ember-cli-htmlbars": "*",
+    "ember-source": "*"
+  }
+}

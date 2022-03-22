@@ -1,4 +1,5 @@
 'use strict';
+let nodeSass = require('node-sass');
 
 module.exports = function(environment) {
   let ENV = {
@@ -6,6 +7,10 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    sassOptions: {
+      implementation: nodeSass,
+      outputStyle: 'expanded'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -49,3 +54,11 @@ module.exports = function(environment) {
 
   return ENV;
 };
+
+// outputPaths: {
+//   app: {
+//     css: {
+//       'app': '/assets/app.css'
+//     }
+//   }
+// },
