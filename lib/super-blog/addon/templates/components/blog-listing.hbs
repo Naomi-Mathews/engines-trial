@@ -11,5 +11,26 @@
   {{/link-to-external}}
   <button {{action "bestsellingProduct"}}>Checkout our bestselling product ( uses parent router service )</button>
   {{#link-to-all label="Checkout our bestselling product (uses addon component)" path="super-store.products" }}{{/link-to-all}}
+  {{!-- {{#power-select
+    selected=blogType
+    options=options
+    onchange=(action "onTypeSelection") as |type|}}
+    <span>{{type}}</span>
+  {{/power-select}} --}}
+  {{#radio-button
+    value="Pluto"
+    groupValue=author
+    changed=(action "authorChanged")
+  }}
+    <span>Pluto</span>
+  {{/radio-button}}
+  {{#radio-button
+    value="Stefan"
+    groupValue=author
+    changed=(action "authorChanged")
+  }}
+    <span>Stefan</span>
+  {{/radio-button}}
+  <strong>Published on:</strong>{{moment "12-25-1995" "MM-DD-YYYY"}}
 </article>
 {{outlet}}
